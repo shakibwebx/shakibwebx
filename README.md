@@ -1,47 +1,65 @@
+<!-- Banner -->
+<img src="https://raw.githubusercontent.com/shakibwebx/shakibwebx/main/assets/banner.gif" alt="Banner" style="width:100%; border-radius: 10px;" />
+
 <h1 align="center">Hi 👋, I'm Habibur Rahman (Shakib)</h1>
-<h3 align="center">A passionate MERN Stack Developer from Bangladesh</h3>
-
-<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
-
-- 🔭 I’m currently working on **a full-featured eCommerce dashboard with role-based access**
-
-- 🌱 I’m currently learning **Next.js 15, TypeScript, and Advanced Animations with Framer Motion**
-
-- 👨‍💻 All of my projects are available at [https://github.com/shakibwebx](https://github.com/shakibwebx)
-
-- 💬 Ask me about **React, Next.js, Firebase, MongoDB, TailwindCSS**
-
-- 📫 How to reach me **shakibwebx@gmail.com**
-
-- ⚡ Fun fact: *I love turning complex problems into elegant UI solutions.*
+<h3 align="center">A passionate MERN Stack Developer crafting real-world solutions with clean, scalable code.</h3>
 
 ---
 
-### 🛠️ Tech Stack:
-![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=next.js)
-![MongoDB](https://img.shields.io/badge/-MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-black?style=for-the-badge&logo=framer&logoColor=white)
+### 🌟 About Me
+
+I'm a self-motivated and enthusiastic Full-Stack Developer with a strong focus on **MERN Stack (MongoDB, Express.js, React, Node.js)**. My vision is to **build scalable, user-friendly web applications** that solve real-world problems and provide outstanding user experiences.
+
+- 🔭 Currently building: A feature-rich role-based admin dashboard with Next.js
+- 🌱 Learning: Next.js 15, TypeScript, Framer Motion, and UI/UX best practices
+- 💡 Exploring: Shadcn/UI, Recharts, and modern animation libraries
+- 📫 Reach me at: **shakibwebx@gmail.com**
 
 ---
 
-### 📈 GitHub Stats:
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shakibwebx&show_icons=true&theme=radical" alt="shakibwebx" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=shakibwebx&theme=radical&hide_border=false" />
-</p>
+### 🧠 I Work With:
+- 🚀 **Frontend**: React.js, Next.js, TypeScript, TailwindCSS, Shadcn/UI, Redux
+- 🛠 **Backend**: Node.js, Express.js, MongoDB, Firebase
+- 🌐 **Other Tools**: Git, GitHub, Framer Motion, Swiper.js, Figma
 
 ---
 
-### 📫 Connect with me:
+### 🧰 Tech Stack
 <p align="left">
-  <a href="https://linkedin.com/in/shakibwebx" target="_blank">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/linkedin.svg" alt="shakibwebx" height="30" width="30" />
-  </a>
-  <a href="mailto:shakibwebx@gmail.com">
-    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg" alt="gmail" height="30" width="30" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,mongodb,tailwind,typescript,js,html,css,firebase,git,github,vscode" />
 </p>
+
+---
+
+### 🔗 Connect with Me
+<p align="left">
+  <a href="mailto:shakibwebx@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/shakibwebx" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+</p>
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=shakibwebx&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=shakibwebx&theme=tokyonight" alt="GitHub Streak" />
+</p>
+
+---
+
+### 📌 Featured Projects
+
+Here are a few highlighted projects I'm proud of:
+
+- 🛒 [Medicine E-Commerce Shop](https://github.com/shakibwebx/medicine-ecommerce-shop) – Full-featured MERN e-commerce app
+- 🧾 [Nicholas Realty](https://www.nrprobate.com/) – Real estate website for probate realtor services
+- 📖 [Best Quran Lesson](https://bestquranlesson.com/) – Online platform for Quranic education
+
+> Explore more in the pinned section of my repositories.
+
+---
+
+📌 *Feel free to connect, collaborate, or just say hi! I'm always open to exciting ideas and meaningful projects.*
+
