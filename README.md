@@ -13,7 +13,7 @@ I'm a self-motivated and enthusiastic Full-Stack Developer with a strong focus o
 - 🔭 Currently building: A feature-rich role-based admin dashboard with Next.js
 - 🌱 Learning: Next.js 15, TypeScript, Framer Motion, and UI/UX best practices
 - 💡 Exploring: Shadcn/UI, Recharts, and modern animation libraries
-- 📫 Reach me at: **shakibwebx@gmail.com**
+- 📫 Reach me at: **hello@skbshakib.com**
 
 ---
 
