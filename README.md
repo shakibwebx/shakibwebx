@@ -17,7 +17,7 @@
 I'm a self-driven **Full-Stack Developer** specializing in the **MERN Stack**. I bring real-world ideas to life with scalable, maintainable, and beautifully designed web applications.
 
 - 🧠 Tech Focus: **MongoDB, Express.js, React, Node.js, Next.js 15, TypeScript**
-- 💼 Portfolio: [habibur-rahman.vercel.app](https://habibur-rahman-amber.vercel.app/)
+- 💼 Portfolio: [Habibur-Rahman](https://habibur-rahman-amber.vercel.app/)
 - 🛠 Currently Building: A robust **role-based admin dashboard** using **Next.js + Shadcn/UI**
 - 📈 Learning: **Framer Motion**, **Advanced UX**, and **Modern Web Animation**
 - 📫 Contact: [hello@skbshakib.com](mailto:hello@skbshakib.com)
