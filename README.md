@@ -1,5 +1,5 @@
 <!-- Banner -->
-<img src="https://raw.githubusercontent.com/shakibwebx/shakibwebx/main/assets/banner.gif" alt="Banner" style="width:100%; border-radius: 10px;" />
+<img src="./assets/shakibwebx.png" alt="Banner" style="width:100%; border-radius: 10px;" />
 
 <h1 align="center">Hi 👋, I'm Habibur Rahman</h1>
 <h3 align="center">A passionate MERN Stack Developer crafting real-world solutions with clean, scalable code.</h3>
