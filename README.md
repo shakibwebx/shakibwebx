@@ -20,7 +20,7 @@ I'm a self-driven **Full-Stack Developer** specializing in the **MERN Stack**. I
 - 💼 Portfolio: [Habibur-Rahman](https://habibur-rahman-amber.vercel.app/)
 - 🛠 Currently Building: A robust **role-based admin dashboard** using **Next.js + Shadcn/UI**
 - 📈 Learning: **Framer Motion**, **Advanced UX**, and **Modern Web Animation**
-- 📫 Contact: [hello@skbshakib.com](mailto:hello@skbshakib.com)
+- 📫 Contact: [habiburwebx@gmail.com](mailto:habiburwebx@gmail.com)
 
 ---
 
