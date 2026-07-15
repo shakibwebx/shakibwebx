@@ -1,70 +1,74 @@
 <!-- Banner -->
 <img src="./assets/shakibebx.png" alt="Banner" style="width:100%; border-radius: 10px;" />
 
-<h1 align="center">Hi 👋, I'm Habibur Rahman</h1>
-<h3 align="center">🚀 Full-Stack Developer | Crafting Clean Code, Scalable Systems & Stunning UIs</h3>
+<h1 align="center">Habibur Rahman (Habib) 👋</h1>
+<h3 align="center">Full-Stack JavaScript Developer &nbsp;|&nbsp; WordPress/Elementor Specialist &nbsp;|&nbsp; Healthcare Web Niche</h3>
 
 <p align="center">
   <a href="mailto:hello@skbshakib.com"><img src="https://img.shields.io/badge/Email-%23ff6e18.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/habibur-raahamaan/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/shakibwebx" target="_blank"><img src="https://img.shields.io/badge/GitHub-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Upwork-Top%20Rated-6fda44.svg?&style=for-the-badge&logo=upwork&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Fiverr-Level%201-1dbf73.svg?&style=for-the-badge&logo=fiverr&logoColor=white" /></a>
 </p>
 
 ---
 
-### 🔥 About Me
+### 👨‍💻 About Me
 
-I'm a self-driven **Full-Stack Developer** specializing in the **MERN Stack**. I bring real-world ideas to life with scalable, maintainable, and beautifully designed web applications.
+I'm a full-stack JavaScript developer with two focus areas that reinforce each other:
 
-- 🧠 Tech Focus: **MongoDB, Express.js, React, Node.js, Next.js 15, TypeScript**
-- 💼 Portfolio: [Habibur-Rahman](https://habibur-rahman-amber.vercel.app/)
-- 🛠 Currently Building: A robust **role-based admin dashboard** using **Next.js + Shadcn/UI**
-- 📈 Learning: **Framer Motion**, **Advanced UX**, and **Modern Web Animation**
+- 🧠 **Full-Stack Development** — React, Next.js, Node.js, TypeScript, MongoDB (MERN)
+- 🏥 **WordPress/Elementor Specialist** — building and optimizing healthcare & medical clinic websites (performance, SEO, ACF, custom integrations)
+
+Currently working remotely as a full-stack developer at **Spiel Creative** (UK-based digital agency), building and maintaining WordPress and Next.js sites for healthcare clients — alongside active freelancing on **Upwork** (Top Rated, 100% JSS) and **Fiverr**.
+
+- 💼 Portfolio: [habibur-rahman-amber.vercel.app](https://habibur-rahman-amber.vercel.app/)
+- 🛠 Currently building: WordPress-to-Next.js migration pilots for existing client sites
+- 📈 Learning: Framer Motion, advanced UX, modern web animation
 - 📫 Contact: [habiburwebx@gmail.com](mailto:habiburwebx@gmail.com)
 
 ---
 
-### 💼 Featured Projects
+### 💼 Featured Work
 
-> ✨ Each project reflects my dedication to building production-ready applications with clean code and intuitive UX.
+#### 🏥 Healthcare & Medical Clinic Websites (WordPress/Elementor)
+Built and maintained for UK-based clinics — performance tuning, custom ACF-driven pages, SEO fixes, and infrastructure troubleshooting (migrations, malware cleanup, database optimization).
 
-#### 🛒 [Gadgets Hub E-Commerce Shop](https://gadgets-hub-topaz.vercel.app/)
-A complete gadget store built with **MERN + Redux Toolkit**. Includes:
-- Advanced product filtering & search
-- Cart, order management, and role-based admin panel
+| Project | Stack |
+|---|---|
+| [London Cataract Centre](https://londoncataractcentre.co.uk/) | Elementor, HFE, CF7, Owl Carousel |
+| [Professor PS](https://demo.professorps.co.uk/) | WordPress, custom fonts (Typekit) |
+| [BPPEP](https://bppep.co.uk/) | WordPress/Elementor |
+| [DRP Research](https://drpresearch.co.uk/) | WordPress/Elementor |
+| [LMA Clinic](https://lmaclinic.com/) | WordPress/Elementor |
+| [Tucki AI](https://tucki.ai/) | Divi |
 
-#### 🏥 [MediNest – Medicine E-Commerce Store](https://medinest-client.vercel.app/)
-A medicine store with a strong UX focus:
-- Product tabs, responsive design, loading skeletons
-- Built using **Next.js, Redux Toolkit, Firebase Auth, Shadcn/UI**
+#### 🔁 WordPress Migration
+- [Loan Persona](https://loanpersona.com/) — Full WordPress migration (Upwork client project)
+- [Channel Do News](https://channeldonews.com/) — News portal
 
-#### 🚲 [CycleSphere – Cycle E-Commerce Store](https://cycle-sphere.vercel.app/)
-A full-stack e-commerce site for cycles:
-- Admin/product CRUD, secure login
-- Focused on speed and responsive mobile experience
+#### ⚛️ Full-Stack (MERN / Next.js) Projects
+| Project | Description |
+|---|---|
+| [Gadgets Hub](https://gadgets-hub-topaz.vercel.app/) | E-commerce store — MERN + Redux Toolkit, admin panel, advanced filtering |
+| [MediNest](https://medinest-client.vercel.app/) | Medicine e-commerce — Next.js, Redux Toolkit, Firebase Auth, Shadcn/UI |
+| [One Face Kit](https://onefacekit.com/) | Full-stack web app |
+| [Nicholas Realty](https://nrprobate.com/) | Real estate site for a California probate realtor — local SEO focus |
+| [Life Finder](https://life-finder.com/) | Full-stack backend project |
 
-#### 🏡 [Nicholas Realty](https://www.nrprobate.com/)
-Professional real estate website built for a probate realtor in California:
-- Optimized for local SEO
-- Custom design and CMS integration
-
-#### 📖 [Best Quran Lesson](https://bestquranlesson.com/)
-Online Quran learning platform:
-- Designed with accessibility in mind
-- Clean UI with responsive layout for all devices
-
-> 🔗 *Explore more in my [GitHub pinned projects](https://github.com/shakibwebx?tab=repositories).*
+> 🔗 More in my [GitHub pinned repositories](https://github.com/shakibwebx?tab=repositories).
 
 ---
 
 ### 🧰 Tech Stack & Tools
 
-#### ⚙️ Languages & Frameworks
+**Languages & Frameworks**
 <p>
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,nextjs,nodejs,express,mongodb,firebase,tailwind,redux" />
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,nextjs,nodejs,express,mongodb,firebase,tailwind,redux,wordpress" />
 </p>
 
-#### 🎨 UI/UX & Productivity Tools
+**Design, Testing & Deployment**
 <p>
   <img src="https://skillicons.dev/icons?i=figma,framer,postman,git,github,vscode,vercel,netlify" />
 </p>
@@ -83,15 +87,16 @@ Online Quran learning platform:
 
 ---
 
-### 🤝 Let’s Connect & Collaborate
+### 🤝 Let's Connect
 
-I'm always open to:
-- 🔧 Building modern web apps & dashboards
-- 🌐 Joining freelance or remote projects
-- 🎯 Collaborating on open-source or startups
+Open to:
+- 🏥 WordPress/Elementor projects, especially healthcare & clinic sites
+- ⚛️ Full-stack MERN / Next.js builds and dashboards
+- 🌐 Freelance work via Upwork or Fiverr
+- 🎯 Open-source or startup collaborations
 
-📬 **Let's talk:** [hello@skbshakib.com](mailto:hello@skbshakib.com)
+📬 **Reach out:** [hello@skbshakib.com](mailto:hello@skbshakib.com)
 
 ---
 
-> _"Great products start with great code. I aim to write clean, purposeful, and scalable solutions that users love."_ 🌟
+> *"Great products start with great code — clean, purposeful, and built for the client's actual problem."*
