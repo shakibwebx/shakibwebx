@@ -78,11 +78,11 @@ Built and maintained for UK-based clinics — performance tuning, custom ACF-dri
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shakibwebx&show_icons=true&theme=tokyonight&hide=prs" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=shakibwebx&show_icons=true&theme=tokyonight&hide=prs&cache_seconds=1800" alt="GitHub Stats" />
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=shakibwebx&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=shakibwebx&theme=tokyonight" alt="GitHub Streak" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shakibwebx&layout=compact&theme=tokyonight" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shakibwebx&layout=compact&theme=tokyonight&cache_seconds=1800" alt="Top Languages" />
 </p>
 
 ---
@@ -100,3 +100,4 @@ Open to:
 ---
 
 > *"Great products start with great code — clean, purposeful, and built for the client's actual problem."*
+> 
