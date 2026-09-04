@@ -1,6 +1,12 @@
 name: Refresh GitHub stats
 
 on:
+  # Runs on every push to main so the cards fill in without anyone having
+  # to trigger the workflow by hand. The refresh commit is made with
+  # GITHUB_TOKEN, which GitHub does not allow to re-trigger workflows, so
+  # this cannot loop.
+  push:
+    branches: [main]
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch:
