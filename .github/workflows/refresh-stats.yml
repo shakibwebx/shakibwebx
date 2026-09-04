@@ -1,0 +1,66 @@
+name: Refresh GitHub stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch stat cards
+        run: |
+          set -u
+          mkdir -p assets
+
+          # Downloads an SVG card, retrying while the upstream demo instance is
+          # rate limited. A bad response leaves the previously committed card in
+          # place, so the README never shows a broken image.
+          fetch() {
+            name="$1"
+            url="$2"
+            tmp="$(mktemp)"
+
+            for attempt in 1 2 3 4 5; do
+              if curl -fsSL --max-time 30 -o "$tmp" "$url"; then
+                if head -c 400 "$tmp" | grep -q "<svg" \
+                  && ! grep -qE "Something went wrong|Maximum retries exceeded|Could not fetch" "$tmp"; then
+                  mv "$tmp" "assets/$name.svg"
+                  echo "ok: $name"
+                  return 0
+                fi
+              fi
+              echo "retry $attempt: $name"
+              sleep $((attempt * 10))
+            done
+
+            rm -f "$tmp"
+            echo "failed: $name (keeping previous card)"
+          }
+
+          user=shakibwebx
+          theme=tokyonight
+
+          fetch stats "https://github-readme-stats.vercel.app/api?username=$user&show_icons=true&theme=$theme&hide=prs&hide_border=true"
+          fetch streak "https://streak-stats.demolab.com/?user=$user&theme=$theme&hide_border=true"
+          fetch top-langs "https://github-readme-stats.vercel.app/api/top-langs/?username=$user&layout=compact&theme=$theme&hide_border=true"
+
+      - name: Commit refreshed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for card in stats streak top-langs; do
+            [ -f "assets/$card.svg" ] && git add "assets/$card.svg"
+          done
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            git commit -m "chore: refresh GitHub stat cards"
+            git push
+          fi
