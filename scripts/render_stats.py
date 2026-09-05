@@ -83,12 +83,12 @@ def graphql(token, query, variables):
 
 
 def contribution_days(token, login, created_at):
-    """Day -> contribution count, from account creation to today.
+    """Day -> contribution count, plus how many came from private repos.
 
     The calendar only covers a year per query, so walk one year at a time.
     """
     days = {}
-    hidden = 0
+    private = 0
     today = dt.datetime.now(dt.timezone.utc)
     start = created_at
     while start <= today:
@@ -103,12 +103,12 @@ def contribution_days(token, login, created_at):
             },
         )
         collection = data["user"]["contributionsCollection"]
-        hidden += collection["restrictedContributionsCount"]
+        private += collection["restrictedContributionsCount"]
         for week in collection["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 days[day["date"]] = day["contributionCount"]
         start = end + dt.timedelta(seconds=1)
-    return days, hidden
+    return days, private
 
 
 def streaks(days):
@@ -274,7 +274,7 @@ def main():
     # be allowed to read. Losing it should not cost the other cards, so keep
     # whatever streak card is already committed and carry on.
     try:
-        days, hidden = contribution_days(token, login, created_at)
+        days, private = contribution_days(token, login, created_at)
     except (urllib.error.URLError, RuntimeError) as error:
         print(f"skipping streak card: {error}", file=sys.stderr)
         print("set a STATS_TOKEN secret (a PAT with read:user) to enable it", file=sys.stderr)
@@ -285,15 +285,10 @@ def main():
     else:
         active = sorted(date for date, count in days.items() if count > 0)
         total = sum(days.values())
-        print(f"{total} contributions visible to this token")
-        if hidden:
-            # Private contributions this token is not allowed to see. A PAT
-            # belonging to the profile owner can read them; the default
-            # GITHUB_TOKEN cannot, even with private contributions shown on
-            # the profile.
-            print(f"{hidden} private contributions hidden - set a STATS_TOKEN "
-                  "secret (a PAT with read:user) to include them",
-                  file=sys.stderr)
+        # Work in private repositories is counted here as long as the profile
+        # has "Include private contributions on my profile" turned on; without
+        # it the calendar only reports public work and the card undercounts.
+        print(f"{total} contributions, {private} of them in private repositories")
         current, longest = streaks(days)
         cards["assets/stats.svg"] = render_stats(user, stars, total)
         cards["assets/streak.svg"] = render_streak(
