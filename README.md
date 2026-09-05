@@ -77,12 +77,14 @@ Built and maintained for UK-based clinics — performance tuning, custom ACF-dri
 
 ### 📈 GitHub Stats
 
+<!-- Cards are snapshotted daily into assets/ by .github/workflows/refresh-stats.yml,
+     so they keep rendering even when the public github-readme-stats instance is rate limited. -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shakibwebx&show_icons=true&theme=tokyonight&hide=prs&cache_seconds=1800" alt="GitHub Stats" />
+  <img src="./assets/stats.svg" alt="GitHub Stats" />
   <br/>
-  <img src="https://streak-stats.demolab.com?user=shakibwebx&theme=tokyonight" alt="GitHub Streak" />
+  <img src="./assets/streak.svg" alt="GitHub Streak" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shakibwebx&layout=compact&theme=tokyonight&cache_seconds=1800" alt="Top Languages" />
+  <img src="./assets/top-langs.svg" alt="Top Languages" />
 </p>
 
 ---
