@@ -54,6 +54,7 @@ CONTRIBUTIONS_QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     contributionsCollection(from: $from, to: $to) {
+      restrictedContributionsCount
       contributionCalendar {
         weeks { contributionDays { date contributionCount } }
       }
@@ -87,6 +88,7 @@ def contribution_days(token, login, created_at):
     The calendar only covers a year per query, so walk one year at a time.
     """
     days = {}
+    hidden = 0
     today = dt.datetime.now(dt.timezone.utc)
     start = created_at
     while start <= today:
@@ -100,12 +102,13 @@ def contribution_days(token, login, created_at):
                 "to": end.strftime("%Y-%m-%dT%H:%M:%SZ"),
             },
         )
-        calendar = data["user"]["contributionsCollection"]["contributionCalendar"]
-        for week in calendar["weeks"]:
+        collection = data["user"]["contributionsCollection"]
+        hidden += collection["restrictedContributionsCount"]
+        for week in collection["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 days[day["date"]] = day["contributionCount"]
         start = end + dt.timedelta(seconds=1)
-    return days
+    return days, hidden
 
 
 def streaks(days):
@@ -271,7 +274,7 @@ def main():
     # be allowed to read. Losing it should not cost the other cards, so keep
     # whatever streak card is already committed and carry on.
     try:
-        days = contribution_days(token, login, created_at)
+        days, hidden = contribution_days(token, login, created_at)
     except (urllib.error.URLError, RuntimeError) as error:
         print(f"skipping streak card: {error}", file=sys.stderr)
         print("set a STATS_TOKEN secret (a PAT with read:user) to enable it", file=sys.stderr)
@@ -282,6 +285,15 @@ def main():
     else:
         active = sorted(date for date, count in days.items() if count > 0)
         total = sum(days.values())
+        print(f"{total} contributions visible to this token")
+        if hidden:
+            # Private contributions this token is not allowed to see. A PAT
+            # belonging to the profile owner can read them; the default
+            # GITHUB_TOKEN cannot, even with private contributions shown on
+            # the profile.
+            print(f"{hidden} private contributions hidden - set a STATS_TOKEN "
+                  "secret (a PAT with read:user) to include them",
+                  file=sys.stderr)
         current, longest = streaks(days)
         cards["assets/stats.svg"] = render_stats(user, stars, total)
         cards["assets/streak.svg"] = render_streak(
