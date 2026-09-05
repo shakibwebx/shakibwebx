@@ -1,5 +1,5 @@
 <!-- Banner -->
-<img src="./assets/shakibebx.png" alt="Banner" style="width:100%; border-radius: 10px;" />
+<img src="./assets/git-shakibwebx.png" alt="Banner" style="width:100%; border-radius: 10px;" />
 
 <h1 align="center">Habibur Rahman (Habib) 👋</h1>
 <h3 align="center">Full-Stack JavaScript Developer &nbsp;|&nbsp; WordPress/Elementor Specialist &nbsp;|&nbsp; Healthcare Web Niche</h3>
